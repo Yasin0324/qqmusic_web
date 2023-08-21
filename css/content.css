@@ -1,0 +1,330 @@
+/* 歌单推荐 */
+.mid{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+.content .wrap{
+    position: relative;
+    overflow: hidden;
+    width: 1518px;
+    height: auto;
+    background:url(../picture/background.webp) 50% 0 repeat-x;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0 20px 0;
+}
+
+.content .wrap h1{
+    display: block;
+    margin: 0 auto;
+    line-height: 40px;
+    width: 196px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    letter-spacing: .7rem;
+    text-align: center;
+}
+.content .wrap h1 span,
+.content .wrap h1 span a{
+    text-indent: 0;
+    letter-spacing: 0;
+}
+.wrap .tit{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.wrap .tit >li{
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 24px;
+    font-weight: 600;
+}
+.wrap .tit >li a{
+    color: rgb(51, 51, 51);
+}
+.wrap .tit > li a:hover{
+    color: rgb(49, 194, 124);
+}
+.wrap .tit >li a.now{
+    color: rgb(49, 194, 124);
+}
+.wrap .textwrap{
+    width: 100%;
+    position: relative;
+}
+.wrap .recommend{
+    width: 1220px;
+    height: auto;
+    overflow: hidden;
+    /* z-index: 4; */
+    /* transition: 0.6s all; */
+    height: 370px;
+}
+
+.wrap .recommend .musicrecommend{
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position:relative;
+    transition: all 0.4s ease-in-out;
+    left: 0;
+}
+
+.musicrecommend .img_list {
+    /* position: absolute; */
+    display: flex;
+
+    opacity: 1;
+}
+
+.img_list.active{
+    opacity: 1;
+}
+.wrap .recommend .musicrecommend .imgsingle{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    padding-bottom: 60px;
+    margin-bottom:26px;
+}
+
+.wrap .recommend .musicrecommend .text{
+    margin: 15px 0;
+    font-size: 14px;
+}
+.text a{
+
+    color: rgb(0,0,0);
+}
+.text a:hover{
+    text-decoration: none;
+}
+.text p{
+    margin-top: 10px;
+    color: rgb(153, 153, 153);
+    white-space: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 22px;
+    font-size:14px ;
+}
+.wrap .recommend .imgsingle .w_img{
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+}
+.wrap .recommend .imgsingle img{
+    margin-bottom: -2px;
+}
+.wrap .recommend .musicrecommend .imgsingle img{
+    width: 224px;
+    height: 224px;
+}
+
+/* 新歌首发 */
+.newsong {
+    /* position: relative; */
+    /* display: flex; */
+    width: 1220px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+    /* border: 12px red solid; */
+}
+.new {
+    width:100% ;
+    display: flex;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    left: 0;
+    /* overflow: hidden; */
+}
+
+.songs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.songs.active {
+    opacity: 1;
+}
+.swrap{
+    width: 1220px;
+    display: flex;
+}
+.newsong .song {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+    height: auto;
+    padding: 12px 0 13px 0;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    cursor: pointer;
+}
+.newsong .song:nth-child(3n+2) {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.newsong .song:nth-last-child(-n+3) {
+    border-bottom: none;
+}
+.newsong .new .song a img{
+    width: 86px;
+    height: 86px;
+    object-fit: cover;
+}
+.newsong p{
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+}
+.newsong h3{
+    display: block;
+    margin:21px 0 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.newsong .song h3 > a,
+.newsong .song .singer > a{
+    color: rgb(0,0,0);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.newsong .song .singer >a{
+    margin: 10px 0 0 10px;
+    color: rgb(153, 153, 153);
+    display: inline-block;
+}
+.newsong .song h3>a:hover,
+.newsong .song .singer >a:hover{
+    color: rgb(49, 194, 124);
+}
+.newsong .song div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+.playall{
+    color: rgb(0,0,0);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 123px;
+    height: 38px;
+    line-height: 38px;
+    border:1px solid rgb(201, 201, 201);
+    font-size: 14px;
+    text-indent: 20px;
+}
+.playall::after{
+    position: absolute;
+    content:'';
+    width: 13px;
+    height: 16px;
+    background-image: url("../picture/icon_sprite.630b3e60.png");
+    background-position: -60px -220px;
+    background-repeat: no-repeat;
+    left: 20px;
+    top: 11px;
+}
+.playall:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+    color: rgb(0,0,0);
+}
+
+.navli{
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 10; */
+}
+
+.navli li {
+    width: 8px;
+    height: 8px;
+    background: rgba(225, 225, 225, 1);
+    border-radius: 50%;
+    float: left;
+    margin: 0 10px;
+    /* z-index: 10; */
+}
+
+.buttonli1.grey{
+    background:#afafaf;
+}
+
+.buttonli2.grey {
+    background: #afafaf;
+}
+
+.navli li:hover {
+    background:#afafaf;
+}
+
+/* 左右按钮 */
+.wrap .Btn {
+    position: absolute;
+    display: block;
+    width: 79px;
+    height: 108px;
+    background: rgba(100, 100, 100, .1);
+    margin: 0 -80px;
+    transition: all .4s ease-in 0s;
+    top: 40%;
+}
+
+.wrap .Btn:hover {
+    background: rgba(100, 100, 100, .2);
+}
+
+.wrap .Btn::after {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 40px;
+    content: '';
+    background: url(../picture/icon_sprite.630b3e60.png) no-repeat;
+}
+
+.wrap .left_btn {
+    float: left;
+}
+
+.wrap .left_btn::after {
+    background-position: -20px -120px;
+}
+
+.wrap .right_btn {
+    float: right;
+    right: 0;
+}
+
+.wrap .right_btn::after {
+    background-position:0 -120px;
+}
+
+.wrap:hover .Btn {
+    margin: 0;
+}

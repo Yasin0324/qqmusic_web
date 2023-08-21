@@ -1,0 +1,126 @@
+.continer{
+    width: 100%;
+    height: 142px;
+    background-color: rgb(255,255,255);
+}
+.topbox{
+    width: 1200px;
+    height:90px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+.logo{
+    float: left;
+    margin-right:20px ;
+    margin-top:19px ;
+}
+.leftbox{
+    float: left;
+}
+.leftlist{
+    height: 90px;
+    float: left;
+}
+.leftlist li{
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    padding: 0 20px;
+    float: left;
+}
+.leftlist li a,.logintext a{
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+    display:inline-block;
+    height: 90px;
+    position: relative;
+}
+.leftlist .now{
+    background-color: rgb(49, 194, 124);
+}
+.leftlist .now a,.leftlist .now:hover a{
+    color: rgb(255,255,255);
+}
+.leftlist a:hover,.logintext a:hover{
+    color: rgb(49, 194, 124);
+}
+.mark{
+    position: absolute;
+    top: 18px;
+    right: -18px;
+    width: 37px;
+    height: 14px;
+}
+.search{
+    float: left;
+    width: 220px;
+    height:38px;
+    margin-top: 26px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    margin-right: 25px;
+}
+.searchbox{
+    border: none;
+    width: 176px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    margin-left: 11px;
+    outline: none;
+    color: rgb(255,255,255);
+    padding-right:8px ;
+}
+.searchbutton{
+    width: 16px;
+    height: 16px;
+    background: url("../picture/icon.png")no-repeat;
+    border: none;
+    background-position:0;
+    margin: -4px;
+}
+.rightbox{
+    float: left;
+}
+.rightbox li{
+    float: left;
+    margin-right:30px;
+    text-align: center;
+}
+.logintext{
+    height: 90px;
+    line-height: 90px;
+}
+.openVIP{
+    width: 122px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 2px;
+    background-color: rgb(49, 194, 124);
+    margin-top: 25px;
+}
+.openVIP a{
+    color: rgb(255,255,255);
+    display: inline-block;
+}
+.bottombox{
+    width: 1200px;
+    height: 52px;
+    margin: 0 auto;
+}
+.midbox{
+    height: 52px;
+    line-height: 52px;
+    padding-left: 220px;
+}
+.midbox a{
+    color: rgb(0, 0, 0);
+    float: left;
+    display: block;
+    margin-right: 57px;
+    font-size: 18px;
+}
+.midbox a:hover,
+.midbox .now{
+    color: rgb(49, 194, 124);
+}
